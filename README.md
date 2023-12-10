@@ -13,3 +13,17 @@ phi-bin : 32 for a single head
 slice: 32 for a single head
 rbin: 64 for a single head 
 
+
+-> iterative process in image reconstruction : 
+    measured data is defined
+    initial estimation is defined
+    for i in rage (number of iteration): 
+      error term = measured_data / initial estimation 
+      correction factor = backproject (error term )\
+      initial estimation *= correction factor 
+in this process we make our initial estimation of image better and better in each itertion untill get to convergence. 
+2 main iterative algorithms we use in nuclear medicine: 
+  Maximujm Likelihood expectatoin maximization (MLEM) - Ordering subset expectation maximization (OSEM)
+  
+
+
